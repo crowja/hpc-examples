@@ -25,7 +25,7 @@ def analysis(x):
 if __name__ == "__main__":
 
     # Create a task list, each task object representing a set of parameters
-    # to use by analysis() above.
+    # to be used as the argument of a call to analysis() above.
     tasks = []
     for i in range(10):
         task = Task()
