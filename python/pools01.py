@@ -32,7 +32,10 @@ if __name__ == "__main__":
         task.set_params(i, i + 1)
         tasks.append(task)
 
+#23456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
     # Set up a pool of processes and let the pool work through the task list.
+    # It seems the default for Pool() is one process per CPU. I don't know yet
+    # if this somehow leads to conflicts when multithreading in a VCPU ...
     ##with Pool(processes=2) as pool:
     with Pool() as pool:
         blah = pool.map(analysis, tasks)
