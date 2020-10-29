@@ -1,2 +1,2 @@
-# hpc-helpers
+# hpc-examples.
 HPC snippets and scripts.
